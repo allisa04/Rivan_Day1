@@ -851,7 +851,7 @@ conf t
 conf t
  vtp domain ccnp
  vtp password pass
- vtp mode server
+ vtp mode client
  vtp version 2
  end
 ~~~
@@ -1002,7 +1002,7 @@ conf t
   channel-group 1 mode passive
   port-channel load-balance src-mac
   end
-show int po1 | inc BW
+show int po1 | inc BWuy
 ~~~
 
 How does Port-Channel load balance
